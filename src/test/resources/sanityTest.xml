@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity Test">
+    <test name="Checkout Test" enabled="false">
+        <groups>
+            <run>
+                <include name="sanity"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.practiceTests.TestNGIntroTests"></class>
+            <class name="tests.practiceTests.LoginTests"></class>
+        </classes>
+    </test>
+    <test name="Login Test" enabled="false">
+        <groups>
+            <run>
+                <include name="login"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.practiceTests.LoginTests"></class>
+        </classes>
+
+    </test>
+    <test name="My test">
+        <groups>
+            <run>
+                <include name="my"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.exampleTests.AmazonTests"></class>
+            <class name="tests.exampleTests.EtsyTests"></class>
+            <class name="tests.exampleTests.GoogleTests"></class>
+        </classes>
+    </test>
+    <test name="Sanity Test Practice">
+        <classes>
+            <class name="tests.testNGPractice.TestNgPractice"></class>
+        </classes>
+
+    </test>
+</suite>
